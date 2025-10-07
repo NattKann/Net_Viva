@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Communication Viva Questions</title>
+  <style>
+    /* Dark theme styling */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      color: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+
+
+    main {
+      padding-bottom: 20px;
+    }
+
+    .qa {
+      background-color: #1e1e1e;
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    }
+
+    .qa h3 {
+      margin: 0 0 5px 0;
+      cursor: pointer;
+      color: #81d4fa;
+    }
+
+    .qa p {
+      margin: 0;
+      color: #e0e0e0;
+    }
+
+    /* Optional: collapsible answer */
+    .qa p.hide {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Data Communication & Networking Viva Questions</h1>
+    <p>Lightweight, offline-friendly Q&A (Dark Mode)</p>
+  </header>
+
+  <main id="questions">
+    <div class="qa">
+      <h3>1. What is Data Communication?</h3>
+      <p>Data communication refers to the exchange of data between two devices through some form of transmission medium such as a wire cable or wireless channel.</p>
+    </div>
+
+    <div class="qa">
+      <h3>2. What are the key components of a data communication system?</h3>
+      <p>Message, Sender, Receiver, Transmission medium, Protocol</p>
+    </div>
+
+    <div class="qa">
+      <h3>3. What are protocols in networking?</h3>
+      <p>Protocols are a set of rules that govern data communication — specifying how data is transmitted, formatted, and received.</p>
+    </div>
+
+    <div class="qa">
+      <h3>4. What is the difference between a Hub, Switch, and Router?</h3>
+      <p>Hub: Broadcasts data to all ports (Layer 1)<br>Switch: Forwards data to specific MAC addresses (Layer 2)<br>Router: Forwards packets based on IP addresses (Layer 3)</p>
+    </div>
+
+    <div class="qa">
+      <h3>5. What are the layers of the OSI model?</h3>
+      <p>Physical, Data Link, Network, Transport, Session, Presentation, Application</p>
+    </div>
+
+    <div class="qa">
+      <h3>6. Which layer handles routing?</h3>
+      <p>The Network layer (Layer 3) handles routing and logical addressing (IP).</p>
+    </div>
+
+    <div class="qa">
+      <h3>7. What is the main function of the Transport layer?</h3>
+      <p>To provide reliable process-to-process data delivery (e.g., TCP, UDP).</p>
+    </div>
+
+    <div class="qa">
+      <h3>8. What are the main types of transmission media?</h3>
+      <p>Guided: Twisted pair, coaxial cable, fiber optic<br>Unguided: Radio, microwave, infrared</p>
+    </div>
+
+    <div class="qa">
+      <h3>9. What is the difference between TCP and UDP?</h3>
+      <p>TCP: Connection-oriented, Reliable, Slower (HTTP, FTP)<br>UDP: Connectionless, Unreliable, Faster (DNS, VoIP)</p>
+    </div>
+
+    <div class="qa">
+      <h3>10. What is IP addressing?</h3>
+      <p>IP addressing provides a unique logical address to each device on a network, enabling proper routing of packets.</p>
+    </div>
+
+    <div class="qa">
+      <h3>11. What is the difference between IPv4 and IPv6?</h3>
+      <p>IPv4: 32 bits, Decimal format (192.168.1.1), ~4 billion addresses<br>IPv6: 128 bits, Hexadecimal format (2001:db8::1), Almost unlimited addresses</p>
+    </div>
+
+    <div class="qa">
+      <h3>12. What is a subnet mask?</h3>
+      <p>A subnet mask divides the IP address into network and host portions, determining the size of the network.</p>
+    </div>
+
+    <div class="qa">
+      <h3>13. What is a router?</h3>
+      <p>A router is a device that connects multiple networks and forwards data packets based on IP addresses.</p>
+    </div>
+
+    <div class="qa">
+      <h3>14. What is the purpose of the routing table?</h3>
+      <p>It stores paths and rules for forwarding packets to the correct destination network.</p>
+    </div>
+
+    <div class="qa">
+      <h3>15. What are static and dynamic routing?</h3>
+      <p>Static Routing: Routes manually configured by the administrator.<br>Dynamic Routing: Routes learned automatically using routing protocols (e.g., RIP, OSPF, EIGRP).</p>
+    </div>
+
+    <div class="qa">
+      <h3>16. What is RIP (Routing Information Protocol)?</h3>
+      <p>A distance-vector routing protocol that uses hop count as the metric and sends updates every 30 seconds.</p>
+    </div>
+
+    <div class="qa">
+      <h3>17. What is the maximum hop count allowed in RIP?</h3>
+      <p>15 hops. A hop count of 16 means the destination is unreachable.</p>
+    </div>
+
+    <div class="qa">
+      <h3>18. What is OSPF?</h3>
+      <p>Open Shortest Path First — a link-state routing protocol that uses Dijkstra's algorithm to calculate the shortest path.</p>
+    </div>
+
+    <div class="qa">
+      <h3>19. What are the differences between RIP and OSPF?</h3>
+      <p>RIP: Distance Vector, Hop Count metric, Slow convergence, 15 hop limit<br>OSPF: Link State, Cost (Bandwidth) metric, Fast convergence, No hop limit</p>
+    </div>
+
+    <div class="qa">
+      <h3>20. What is a default route?</h3>
+      <p>A route used by the router when no other route matches the destination IP address.</p>
+    </div>
+
+    <div class="qa">
+      <h3>21. What is a gateway of last resort?</h3>
+      <p>The router used as a last option to forward packets when no specific route is known — often configured as a default route.</p>
+    </div>
+
+    <div class="qa">
+      <h3>22. What is meant by "ping" in networking?</h3>
+      <p>ping checks network connectivity by sending ICMP Echo Request packets and waiting for Echo Reply.</p>
+    </div>
+
+    <div class="qa">
+      <h3>23. What is ARP?</h3>
+      <p>Address Resolution Protocol maps an IP address to its physical MAC address.</p>
+    </div>
+
+    <div class="qa">
+      <h3>24. What is DNS?</h3>
+      <p>Domain Name System translates human-readable domain names (e.g., google.com) into IP addresses.</p>
+    </div>
+
+    <div class="qa">
+      <h3>25. What is DHCP?</h3>
+      <p>Dynamic Host Configuration Protocol automatically assigns IP addresses to devices on a network.</p>
+    </div>
+
+    <div class="qa">
+      <h3>26. What is NAT?</h3>
+      <p>Network Address Translation converts private IP addresses to a public IP for internet communication.</p>
+    </div>
+
+    <div class="qa">
+      <h3>27. What is QoS in networking?</h3>
+      <p>Quality of Service ensures priority for important traffic (like voice or video) to reduce latency and packet loss.</p>
+    </div>
+
+    <div class="qa">
+      <h3>28. What is the difference between unicast, multicast, and broadcast?</h3>
+      <p>Unicast: One-to-one communication<br>Multicast: One-to-many selected nodes<br>Broadcast: One-to-all in the network</p>
+    </div>
+
+    <div class="qa">
+      <h3>29. What is congestion in a network?</h3>
+      <p>When the load on the network exceeds its capacity, leading to delay and packet loss.</p>
+    </div>
+
+    <div class="qa">
+      <h3>30. What is meant by network topology?</h3>
+      <p>The physical or logical arrangement of network devices — e.g., Bus, Star, Ring, Mesh, Hybrid.</p>
+    </div>
+  </main>
+
+  <script>
+    // Click to toggle answer visibility
+    let questions = document.querySelectorAll('.qa h3');
+    questions.forEach(q => {
+      q.addEventListener('click', () => {
+        let p = q.nextElementSibling;
+        p.classList.toggle('hide');
+      });
+    });
+  </script>
+</body>
+</html>
