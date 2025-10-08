@@ -68,8 +68,8 @@
     Disclaimer: For educational use only. The author does not take responsibility for any misuse of the content provided.
   </div>
   <header>
-    <h1></h1>
-    <p></p>
+    <h1>Data Communication & Networking Viva Questions</h1>
+    <p>100 Essential Questions for Exam Preparation</p>
   </header>
 
   <main id="questions">
@@ -446,6 +446,131 @@
     <div class="qa">
       <h3>75. What is Packet Switching vs Circuit Switching?</h3>
       <p>Packet Switching: Data divided into packets, each routed independently<br>Circuit Switching: Dedicated communication path established for entire session</p>
+    </div>
+
+    <div class="qa">
+      <h3>76. What is the difference between Ping and Traceroute?</h3>
+      <p>Ping checks connectivity between two devices using ICMP Echo messages.<br>Traceroute shows the path (hops) that packets take to reach the destination.</p>
+    </div>
+
+    <div class="qa">
+      <h3>77. How does network congestion affect performance?</h3>
+      <p>Congestion causes packet loss, delay, and retransmissions. Can be simulated by adding traffic generators or limiting link bandwidth.</p>
+    </div>
+
+    <div class="qa">
+      <h3>78. What is the role of ICMP in Ping?</h3>
+      <p>Ping uses ICMP Echo Request and Echo Reply messages to test reachability. Routers and hosts process and reply to these packets.</p>
+    </div>
+
+    <div class="qa">
+      <h3>79. How do you interpret Traceroute output?</h3>
+      <p>Each line shows a router hop with delay time. High latency or timeouts indicate congestion or routing issues at that hop.</p>
+    </div>
+
+    <div class="qa">
+      <h3>80. How can packet loss due to congestion be prevented?</h3>
+      <p>Use QoS (Quality of Service), traffic shaping, congestion avoidance algorithms (RED), or increase bandwidth.</p>
+    </div>
+
+    <div class="qa">
+      <h3>81. What is the purpose of assigning IP addresses in a LAN?</h3>
+      <p>To uniquely identify devices in the LAN for data communication and routing.</p>
+    </div>
+
+    <div class="qa">
+      <h3>82. What does the 'show mac address-table' command display?</h3>
+      <p>Displays the MAC addresses learned by the switch and their associated ports.</p>
+    </div>
+
+    <div class="qa">
+      <h3>83. What is the purpose of subnetting in IPv4?</h3>
+      <p>Divides a large network into smaller subnets for efficient IP management and security.</p>
+    </div>
+
+    <div class="qa">
+      <h3>84. How do you assign IPv6 address manually?</h3>
+      <p>In Packet Tracer: interface g0/0 → ipv6 address 2001:db8::1/64</p>
+    </div>
+
+    <div class="qa">
+      <h3>85. Why is a router required to connect LANs?</h3>
+      <p>Routers connect different subnets and perform IP-based packet forwarding between networks.</p>
+    </div>
+
+    <div class="qa">
+      <h3>86. What is the significance of gateway IP?</h3>
+      <p>It acts as the exit point for traffic leaving the local subnet to reach other networks.</p>
+    </div>
+
+    <div class="qa">
+      <h3>87. How does TCP ensure reliability?</h3>
+      <p>Through acknowledgments, sequence numbers, and retransmissions. UDP sends datagrams without checking delivery.</p>
+    </div>
+
+    <div class="qa">
+      <h3>88. What applications are best suited for TCP vs UDP?</h3>
+      <p>TCP: Web, Email, File transfer<br>UDP: VoIP, Online games, Video streaming</p>
+    </div>
+
+    <div class="qa">
+      <h3>89. What is the difference between Distance Vector and Link State routing?</h3>
+      <p>Distance Vector (RIP): Shares entire routing table with neighbors<br>Link State (OSPF): Shares only link info, builds full topology</p>
+    </div>
+
+    <div class="qa">
+      <h3>90. Why is OSPF better than RIP?</h3>
+      <p>OSPF converges faster, supports large networks, uses cost metric instead of hop count.</p>
+    </div>
+
+    <div class="qa">
+      <h3>91. What is the purpose of Wireshark in network analysis?</h3>
+      <p>To capture, inspect, and analyze network packets for troubleshooting and study.</p>
+    </div>
+
+    <div class="qa">
+      <h3>92. How do you apply filters in Wireshark?</h3>
+      <p>Examples: HTTP → http, ICMP → icmp, TCP → tcp.port == 80</p>
+    </div>
+
+    <div class="qa">
+      <h3>93. What is the difference between Datagram and Stream sockets?</h3>
+      <p>Datagram = UDP (no connection). Stream = TCP (connection-oriented).</p>
+    </div>
+
+    <div class="qa">
+      <h3>94. What is the role of sendto() and recvfrom() functions?</h3>
+      <p>sendto() sends data to destination address; recvfrom() receives incoming datagrams.</p>
+    </div>
+
+    <div class="qa">
+      <h3>95. What are essential devices for wireless network simulation?</h3>
+      <p>Wireless router, Access point, Wireless PCs, and sometimes a server.</p>
+    </div>
+
+    <div class="qa">
+      <h3>96. What is the role of SSID and WPA2 in wireless networks?</h3>
+      <p>SSID identifies the network; WPA2 secures it using encryption and authentication.</p>
+    </div>
+
+    <div class="qa">
+      <h3>97. What are the email protocols and their ports?</h3>
+      <p>SMTP: Port 25 (sending)<br>POP3: Port 110 (receiving)<br>IMAP: Port 143 (receiving)</p>
+    </div>
+
+    <div class="qa">
+      <h3>98. What is the importance of DNS in email systems?</h3>
+      <p>Converts domain names (e.g., mail.local) into IP addresses for routing emails.</p>
+    </div>
+
+    <div class="qa">
+      <h3>99. What factors influence routing protocol convergence?</h3>
+      <p>Network size, topology change frequency, update intervals, protocol type.</p>
+    </div>
+
+    <div class="qa">
+      <h3>100. What are the limitations of wireless networks?</h3>
+      <p>Signal interference, lower speed, limited range, and potential security risks.</p>
     </div>
   </main>
 
