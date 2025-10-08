@@ -68,509 +68,399 @@
     Disclaimer: For educational use only. The author does not take responsibility for any misuse of the content provided.
   </div>
   <header>
-    <h1></h1>
-    <p></p>
+    <h1>Calculus Problems</h1>
+    <p>PART A & B - Detailed Solutions</p>
   </header>
 
   <main id="questions">
     <div class="qa">
-      <h3>1. What is Data Communication?</h3>
-      <p>Data communication refers to the exchange of data between two devices through some form of transmission medium such as a wire cable or wireless channel.</p>
-    </div>
-
-    <div class="qa">
-      <h3>2. What are the key components of a data communication system?</h3>
-      <p>Message, Sender, Receiver, Transmission medium, Protocol</p>
-    </div>
-
-    <div class="qa">
-      <h3>3. What are protocols in networking?</h3>
-      <p>Protocols are a set of rules that govern data communication — specifying how data is transmitted, formatted, and received.</p>
-    </div>
-
-    <div class="qa">
-      <h3>4. What is the difference between a Hub, Switch, and Router?</h3>
-      <p>Hub: Broadcasts data to all ports (Layer 1)<br>Switch: Forwards data to specific MAC addresses (Layer 2)<br>Router: Forwards packets based on IP addresses (Layer 3)</p>
-    </div>
-
-    <div class="qa">
-      <h3>5. What are the layers of the OSI model?</h3>
-      <p>Physical, Data Link, Network, Transport, Session, Presentation, Application</p>
-    </div>
-
-    <div class="qa">
-      <h3>6. Which layer handles routing?</h3>
-      <p>The Network layer (Layer 3) handles routing and logical addressing (IP).</p>
-    </div>
-
-    <div class="qa">
-      <h3>7. What is the main function of the Transport layer?</h3>
-      <p>To provide reliable process-to-process data delivery (e.g., TCP, UDP).</p>
-    </div>
-
-    <div class="qa">
-      <h3>8. What are the main types of transmission media?</h3>
-      <p>Guided: Twisted pair, coaxial cable, fiber optic<br>Unguided: Radio, microwave, infrared</p>
-    </div>
-
-    <div class="qa">
-      <h3>9. What is the difference between TCP and UDP?</h3>
-      <p>TCP: Connection-oriented, Reliable, Slower (HTTP, FTP)<br>UDP: Connectionless, Unreliable, Faster (DNS, VoIP)</p>
-    </div>
-
-    <div class="qa">
-      <h3>10. What is IP addressing?</h3>
-      <p>IP addressing provides a unique logical address to each device on a network, enabling proper routing of packets.</p>
-    </div>
-
-    <div class="qa">
-      <h3>11. What is the difference between IPv4 and IPv6?</h3>
-      <p>IPv4: 32 bits, Decimal format (192.168.1.1), ~4 billion addresses<br>IPv6: 128 bits, Hexadecimal format (2001:db8::1), Almost unlimited addresses</p>
-    </div>
-
-    <div class="qa">
-      <h3>12. What is a subnet mask?</h3>
-      <p>A subnet mask divides the IP address into network and host portions, determining the size of the network.</p>
-    </div>
-
-    <div class="qa">
-      <h3>13. What is a router?</h3>
-      <p>A router is a device that connects multiple networks and forwards data packets based on IP addresses.</p>
-    </div>
-
-    <div class="qa">
-      <h3>14. What is the purpose of the routing table?</h3>
-      <p>It stores paths and rules for forwarding packets to the correct destination network.</p>
-    </div>
-
-    <div class="qa">
-      <h3>15. What are static and dynamic routing?</h3>
-      <p>Static Routing: Routes manually configured by the administrator.<br>Dynamic Routing: Routes learned automatically using routing protocols (e.g., RIP, OSPF, EIGRP).</p>
-    </div>
-
-    <div class="qa">
-      <h3>16. What is RIP (Routing Information Protocol)?</h3>
-      <p>A distance-vector routing protocol that uses hop count as the metric and sends updates every 30 seconds.</p>
-    </div>
-
-    <div class="qa">
-      <h3>17. What is the maximum hop count allowed in RIP?</h3>
-      <p>15 hops. A hop count of 16 means the destination is unreachable.</p>
-    </div>
-
-    <div class="qa">
-      <h3>18. What is OSPF?</h3>
-      <p>Open Shortest Path First — a link-state routing protocol that uses Dijkstra's algorithm to calculate the shortest path.</p>
-    </div>
-
-    <div class="qa">
-      <h3>19. What are the differences between RIP and OSPF?</h3>
-      <p>RIP: Distance Vector, Hop Count metric, Slow convergence, 15 hop limit<br>OSPF: Link State, Cost (Bandwidth) metric, Fast convergence, No hop limit</p>
-    </div>
-
-    <div class="qa">
-      <h3>20. What is a default route?</h3>
-      <p>A route used by the router when no other route matches the destination IP address.</p>
-    </div>
-
-    <div class="qa">
-      <h3>21. What is a gateway of last resort?</h3>
-      <p>The router used as a last option to forward packets when no specific route is known — often configured as a default route.</p>
-    </div>
-
-    <div class="qa">
-      <h3>22. What is meant by "ping" in networking?</h3>
-      <p>ping checks network connectivity by sending ICMP Echo Request packets and waiting for Echo Reply.</p>
-    </div>
-
-    <div class="qa">
-      <h3>23. What is ARP?</h3>
-      <p>Address Resolution Protocol maps an IP address to its physical MAC address.</p>
-    </div>
-
-    <div class="qa">
-      <h3>24. What is DNS?</h3>
-      <p>Domain Name System translates human-readable domain names (e.g., google.com) into IP addresses.</p>
-    </div>
-
-    <div class="qa">
-      <h3>25. What is DHCP?</h3>
-      <p>Dynamic Host Configuration Protocol automatically assigns IP addresses to devices on a network.</p>
-    </div>
-
-    <div class="qa">
-      <h3>26. What is NAT?</h3>
-      <p>Network Address Translation converts private IP addresses to a public IP for internet communication.</p>
-    </div>
-
-    <div class="qa">
-      <h3>27. What is QoS in networking?</h3>
-      <p>Quality of Service ensures priority for important traffic (like voice or video) to reduce latency and packet loss.</p>
-    </div>
-
-    <div class="qa">
-      <h3>28. What is the difference between unicast, multicast, and broadcast?</h3>
-      <p>Unicast: One-to-one communication<br>Multicast: One-to-many selected nodes<br>Broadcast: One-to-all in the network</p>
-    </div>
-
-    <div class="qa">
-      <h3>29. What is congestion in a network?</h3>
-      <p>When the load on the network exceeds its capacity, leading to delay and packet loss.</p>
-    </div>
-
-    <div class="qa">
-      <h3>30. What is meant by network topology?</h3>
-      <p>The physical or logical arrangement of network devices — e.g., Bus, Star, Ring, Mesh, Hybrid.</p>
-    </div>
-
-    <div class="qa">
-      <h3>31. What is a Mesh Topology?</h3>
-      <p>Every device is connected to every other device for high redundancy.</p>
-    </div>
-
-    <div class="qa">
-      <h3>32. What is a Star Topology?</h3>
-      <p>All devices connect to a central switch or hub.</p>
-    </div>
-
-    <div class="qa">
-      <h3>33. What is CSMA/CD?</h3>
-      <p>Carrier Sense Multiple Access with Collision Detection — used in Ethernet.</p>
-    </div>
-
-    <div class="qa">
-      <h3>34. What is CSMA/CA?</h3>
-      <p>Carrier Sense Multiple Access with Collision Avoidance — used in Wi-Fi.</p>
-    </div>
-
-    <div class="qa">
-      <h3>35. What is EIGRP?</h3>
-      <p>Enhanced Interior Gateway Routing Protocol — a hybrid routing protocol by Cisco.</p>
-    </div>
-
-    <div class="qa">
-      <h3>36. What is Static Routing?</h3>
-      <p>Manually configured routing paths in a router.</p>
-    </div>
-
-    <div class="qa">
-      <h3>37. What is Dynamic Routing?</h3>
-      <p>Automatically updates routes using protocols like RIP or OSPF.</p>
-    </div>
-
-    <div class="qa">
-      <h3>38. What is a VLAN?</h3>
-      <p>Virtual LAN — logically divides a network into separate broadcast domains.</p>
-    </div>
-
-    <div class="qa">
-      <h3>39. What is the function of the Session Layer?</h3>
-      <p>Manages and controls dialogues between computers (session setup, maintenance).</p>
-    </div>
-
-    <div class="qa">
-      <h3>40. What is the Presentation Layer responsible for?</h3>
-      <p>Data formatting, encryption, and compression.</p>
-    </div>
-
-    <div class="qa">
-      <h3>41. What is the Application Layer responsible for?</h3>
-      <p>Provides services like email (SMTP), file transfer (FTP), and browsing (HTTP).</p>
-    </div>
-
-    <div class="qa">
-      <h3>42. What is a Socket?</h3>
-      <p>An endpoint for communication between two devices over a network.</p>
-    </div>
-
-    <div class="qa">
-      <h3>43. What is a Port Number?</h3>
-      <p>A numerical identifier for a specific process or service (e.g., 80 for HTTP).</p>
-    </div>
-
-    <div class="qa">
-      <h3>44. What is ICMP?</h3>
-      <p>Internet Control Message Protocol — used for network diagnostics (Ping, Traceroute).</p>
-    </div>
-
-    <div class="qa">
-      <h3>45. What is SMTP?</h3>
-      <p>Simple Mail Transfer Protocol — used for sending emails between mail servers.</p>
-    </div>
-
-    <div class="qa">
-      <h3>46. What is POP3 and IMAP?</h3>
-      <p>POP3: Downloads mail to a local system.<br>IMAP: Manages mail directly on the server.</p>
-    </div>
-
-    <div class="qa">
-      <h3>47. What is FTP and TFTP?</h3>
-      <p>FTP: File Transfer Protocol — uses TCP (port 21).<br>TFTP: Trivial File Transfer Protocol — uses UDP (port 69).</p>
-    </div>
-
-    <div class="qa">
-      <h3>48. What is Bandwidth?</h3>
-      <p>The data transfer capacity of a communication channel, measured in bits per second (bps).</p>
-    </div>
-
-    <div class="qa">
-      <h3>49. What is Latency?</h3>
-      <p>The delay between sending and receiving data over a network.</p>
-    </div>
-
-    <div class="qa">
-      <h3>50. What is Throughput?</h3>
-      <p>The actual amount of data successfully transmitted per unit time.</p>
-    </div>
-
-    <div class="qa">
-      <h3>51. What is a Firewall?</h3>
-      <p>A security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules.</p>
-    </div>
-
-    <div class="qa">
-      <h3>52. What is the difference between Synchronous and Asynchronous Transmission?</h3>
-      <p>Synchronous: Data is sent in blocks with synchronization.<br>Asynchronous: Data is sent byte by byte with start and stop bits.</p>
-    </div>
-
-    <div class="qa">
-      <h3>53. What is a Bridge?</h3>
-      <p>A device that connects two LAN segments and forwards frames based on MAC addresses, operating at the Data Link layer.</p>
-    </div>
-
-    <div class="qa">
-      <h3>54. What is a Gateway?</h3>
-      <p>A device that connects networks using different protocols and can translate between them.</p>
-    </div>
-
-    <div class="qa">
-      <h3>55. What is HTTP and HTTPS?</h3>
-      <p>HTTP: HyperText Transfer Protocol (port 80)<br>HTTPS: HTTP Secure with SSL/TLS encryption (port 443)</p>
-    </div>
-
-    <div class="qa">
-      <h3>56. What is SSL/TLS?</h3>
-      <p>Secure Sockets Layer/Transport Layer Security — protocols that provide encryption and authentication for secure communication.</p>
-    </div>
-
-    <div class="qa">
-      <h3>57. What is a Proxy Server?</h3>
-      <p>An intermediary server that acts as a gateway between clients and other servers, providing caching and security features.</p>
-    </div>
-
-    <div class="qa">
-      <h3>58. What is Load Balancing?</h3>
-      <p>Distributing network traffic across multiple servers to ensure optimal resource utilization and prevent overload.</p>
-    </div>
-
-    <div class="qa">
-      <h3>59. What is a DMZ?</h3>
-      <p>Demilitarized Zone — a network segment that sits between the internal network and external network, providing an additional layer of security.</p>
-    </div>
-
-    <div class="qa">
-      <h3>60. What is VPN?</h3>
-      <p>Virtual Private Network — creates a secure, encrypted connection over a public network like the internet.</p>
-    </div>
-
-    <div class="qa">
-      <h3>61. What is the difference between LAN, MAN, and WAN?</h3>
-      <p>LAN: Local Area Network (small area)<br>MAN: Metropolitan Area Network (city-wide)<br>WAN: Wide Area Network (large geographical area)</p>
-    </div>
-
-    <div class="qa">
-      <h3>62. What is Ethernet?</h3>
-      <p>A family of networking technologies for LANs, defining wiring and signaling standards for the Physical and Data Link layers.</p>
-    </div>
-
-    <div class="qa">
-      <h3>63. What is Wi-Fi?</h3>
-      <p>Wireless Fidelity — a wireless networking technology that uses radio waves to provide network connectivity.</p>
-    </div>
-
-    <div class="qa">
-      <h3>64. What is Bluetooth?</h3>
-      <p>A short-range wireless communication technology for connecting devices over short distances (typically 10 meters).</p>
-    </div>
-
-    <div class="qa">
-      <h3>65. What is Frame Relay?</h3>
-      <p>A packet-switching protocol for connecting devices on a WAN, operating at the Data Link layer.</p>
-    </div>
-
-    <div class="qa">
-      <h3>66. What is ATM?</h3>
-      <p>Asynchronous Transfer Mode — a switching technique that uses fixed-length cells for data transmission.</p>
-    </div>
-
-    <div class="qa">
-      <h3>67. What is MPLS?</h3>
-      <p>Multiprotocol Label Switching — a routing technique that uses labels to make data forwarding decisions.</p>
-    </div>
-
-    <div class="qa">
-      <h3>68. What is BGP?</h3>
-      <p>Border Gateway Protocol — an exterior gateway protocol used to exchange routing information between autonomous systems on the internet.</p>
-    </div>
-
-    <div class="qa">
-      <h3>69. What is SNMP?</h3>
-      <p>Simple Network Management Protocol — used for monitoring and managing network devices.</p>
-    </div>
-
-    <div class="qa">
-      <h3>70. What is Telnet and SSH?</h3>
-      <p>Telnet: Unencrypted remote login protocol (port 23)<br>SSH: Secure Shell — encrypted remote login protocol (port 22)</p>
-    </div>
-
-    <div class="qa">
-      <h3>71. What is a Collision Domain?</h3>
-      <p>A network segment where data packets can collide with one another when being sent on a shared medium.</p>
-    </div>
-
-    <div class="qa">
-      <h3>72. What is a Broadcast Domain?</h3>
-      <p>A logical division of a network where all nodes can reach each other by broadcast at the data link layer.</p>
-    </div>
-
-    <div class="qa">
-      <h3>73. What is Traceroute?</h3>
-      <p>A diagnostic tool to show the route packets take from source to destination and measure transit delays.</p>
-    </div>
-
-    <div class="qa">
-      <h3>74. What is Network Segmentation?</h3>
-      <p>Dividing a network into smaller segments to improve performance, security, and manageability.</p>
-    </div>
-
-    <div class="qa">
-      <h3>75. What is Packet Switching vs Circuit Switching?</h3>
-      <p>Packet Switching: Data divided into packets, each routed independently<br>Circuit Switching: Dedicated communication path established for entire session</p>
-    </div>
-
-    <div class="qa">
-      <h3>76. What is the difference between Ping and Traceroute?</h3>
-      <p>Ping checks connectivity between two devices using ICMP Echo messages.<br>Traceroute shows the path (hops) that packets take to reach the destination.</p>
-    </div>
-
-    <div class="qa">
-      <h3>77. How does network congestion affect performance?</h3>
-      <p>Congestion causes packet loss, delay, and retransmissions. Can be simulated by adding traffic generators or limiting link bandwidth.</p>
-    </div>
-
-    <div class="qa">
-      <h3>78. What is the role of ICMP in Ping?</h3>
-      <p>Ping uses ICMP Echo Request and Echo Reply messages to test reachability. Routers and hosts process and reply to these packets.</p>
-    </div>
-
-    <div class="qa">
-      <h3>79. How do you interpret Traceroute output?</h3>
-      <p>Each line shows a router hop with delay time. High latency or timeouts indicate congestion or routing issues at that hop.</p>
-    </div>
-
-    <div class="qa">
-      <h3>80. How can packet loss due to congestion be prevented?</h3>
-      <p>Use QoS (Quality of Service), traffic shaping, congestion avoidance algorithms (RED), or increase bandwidth.</p>
-    </div>
-
-    <div class="qa">
-      <h3>81. What is the purpose of assigning IP addresses in a LAN?</h3>
-      <p>To uniquely identify devices in the LAN for data communication and routing.</p>
-    </div>
-
-    <div class="qa">
-      <h3>82. What does the 'show mac address-table' command display?</h3>
-      <p>Displays the MAC addresses learned by the switch and their associated ports.</p>
-    </div>
-
-    <div class="qa">
-      <h3>83. What is the purpose of subnetting in IPv4?</h3>
-      <p>Divides a large network into smaller subnets for efficient IP management and security.</p>
-    </div>
-
-    <div class="qa">
-      <h3>84. How do you assign IPv6 address manually?</h3>
-      <p>In Packet Tracer: interface g0/0 → ipv6 address 2001:db8::1/64</p>
-    </div>
-
-    <div class="qa">
-      <h3>85. Why is a router required to connect LANs?</h3>
-      <p>Routers connect different subnets and perform IP-based packet forwarding between networks.</p>
-    </div>
-
-    <div class="qa">
-      <h3>86. What is the significance of gateway IP?</h3>
-      <p>It acts as the exit point for traffic leaving the local subnet to reach other networks.</p>
-    </div>
-
-    <div class="qa">
-      <h3>87. How does TCP ensure reliability?</h3>
-      <p>Through acknowledgments, sequence numbers, and retransmissions. UDP sends datagrams without checking delivery.</p>
-    </div>
-
-    <div class="qa">
-      <h3>88. What applications are best suited for TCP vs UDP?</h3>
-      <p>TCP: Web, Email, File transfer<br>UDP: VoIP, Online games, Video streaming</p>
-    </div>
-
-    <div class="qa">
-      <h3>89. What is the difference between Distance Vector and Link State routing?</h3>
-      <p>Distance Vector (RIP): Shares entire routing table with neighbors<br>Link State (OSPF): Shares only link info, builds full topology</p>
-    </div>
-
-    <div class="qa">
-      <h3>90. Why is OSPF better than RIP?</h3>
-      <p>OSPF converges faster, supports large networks, uses cost metric instead of hop count.</p>
-    </div>
-
-    <div class="qa">
-      <h3>91. What is the purpose of Wireshark in network analysis?</h3>
-      <p>To capture, inspect, and analyze network packets for troubleshooting and study.</p>
-    </div>
-
-    <div class="qa">
-      <h3>92. How do you apply filters in Wireshark?</h3>
-      <p>Examples: HTTP → http, ICMP → icmp, TCP → tcp.port == 80</p>
-    </div>
-
-    <div class="qa">
-      <h3>93. What is the difference between Datagram and Stream sockets?</h3>
-      <p>Datagram = UDP (no connection). Stream = TCP (connection-oriented).</p>
-    </div>
-
-    <div class="qa">
-      <h3>94. What is the role of sendto() and recvfrom() functions?</h3>
-      <p>sendto() sends data to destination address; recvfrom() receives incoming datagrams.</p>
-    </div>
-
-    <div class="qa">
-      <h3>95. What are essential devices for wireless network simulation?</h3>
-      <p>Wireless router, Access point, Wireless PCs, and sometimes a server.</p>
-    </div>
-
-    <div class="qa">
-      <h3>96. What is the role of SSID and WPA2 in wireless networks?</h3>
-      <p>SSID identifies the network; WPA2 secures it using encryption and authentication.</p>
-    </div>
-
-    <div class="qa">
-      <h3>97. What are the email protocols and their ports?</h3>
-      <p>SMTP: Port 25 (sending)<br>POP3: Port 110 (receiving)<br>IMAP: Port 143 (receiving)</p>
-    </div>
-
-    <div class="qa">
-      <h3>98. What is the importance of DNS in email systems?</h3>
-      <p>Converts domain names (e.g., mail.local) into IP addresses for routing emails.</p>
-    </div>
-
-    <div class="qa">
-      <h3>99. What factors influence routing protocol convergence?</h3>
-      <p>Network size, topology change frequency, update intervals, protocol type.</p>
-    </div>
-
-    <div class="qa">
-      <h3>100. What are the limitations of wireless networks?</h3>
-      <p>Signal interference, lower speed, limited range, and potential security risks.</p>
+      <h3>A-1. Domain of f(x) = (2x² - 5)/(x² + x - 6)</h3>
+      <p><strong>Step 1 — identify denominator.</strong> Denominator D(x) = x² + x - 6.<br><br>
+      <strong>Step 2 — factor denominator.</strong><br>
+      x² + x - 6 = (x + 3)(x - 2).<br><br>
+      <strong>Step 3 — domain restriction.</strong> Denominator cannot be zero, so exclude roots:<br>
+      x ≠ 2, x ≠ -3.<br><br>
+      <strong>Answer:</strong> Domain = ℝ ∖ {-3, 2}.</p>
+    </div>
+
+    <div class="qa">
+      <h3>A-2. Sketch / analyze f(x) = {x², -2 ≤ x ≤ 0; 2-x, 0 < x ≤ 2}</h3>
+      <p><strong>Step 1 — left branch [-2,0]:</strong> function is x²<br>
+      At x = -2: f(-2) = (-2)² = 4. (closed point)<br>
+      At x = 0: f(0) = 0. (closed point, because 0 is included for left branch)<br><br>
+      <strong>Step 2 — right branch (0,2]:</strong> function is 2-x<br>
+      At x → 0⁺: 2-x → 2. But x = 0 is not included in the right branch → open spot at (0,2).<br>
+      At x = 2: f(2) = 2-2 = 0. (closed point)<br><br>
+      <strong>Step 3 — continuity at x = 0.</strong><br>
+      Left-hand value at 0: lim(x→0⁻) f(x) = 0.<br>
+      Right-hand value at 0: lim(x→0⁺) f(x) = 2.<br>
+      They are different ⇒ jump discontinuity at x = 0.<br><br>
+      <strong>Step 4 — graphing notes:</strong><br>
+      Parabola segment from (-2,4) to (0,0), both filled.<br>
+      An open dot at (0,2). A straight line from just right of 0 down to (2,0).<br><br>
+      <img src="https://i.ibb.co/GfmPW4tw/image.png" alt="Graph of piecewise function" style="max-width: 100%; height: auto; border-radius: 5px; margin: 10px 0;"></p>
+    </div>
+
+    <div class="qa">
+      <h3>A-3. Compute lim(x→1) (x-1)/(x²-1)</h3>
+      <p><strong>Step 1 — factor denominator.</strong><br>
+      x² - 1 = (x - 1)(x + 1).<br><br>
+      <strong>Step 2 — simplify (valid for x ≠ 1).</strong><br>
+      (x-1)/(x²-1) = (x-1)/[(x-1)(x+1)] = 1/(x+1).<br><br>
+      <strong>Step 3 — take the limit.</strong><br>
+      lim(x→1) 1/(x+1) = 1/(1+1) = 1/2.<br><br>
+      <strong>Answer:</strong> 1/2.</p>
+    </div>
+
+    <div class="qa">
+      <h3>A-4. Differentiate y = x·tan(√x)</h3>
+      <p>We compute y′ using product rule and chain rule.<br><br>
+      <strong>Step 1 — product rule.</strong> Let u = x, v = tan(√x). Then<br>
+      y′ = u′v + uv′.<br>
+      So y′ = 1·tan(√x) + x·v′.<br><br>
+      <strong>Step 2 — find v′ = d/dx tan(√x).</strong><br>
+      Let w = √x = x^(1/2). Then tan(w) derivative is sec²(w)·w′.<br>
+      w′ = 1/(2√x).<br>
+      So v′ = sec²(√x)·1/(2√x).<br><br>
+      <strong>Step 3 — assemble.</strong><br>
+      y′ = tan(√x) + x·(sec²(√x)·1/(2√x)).<br><br>
+      <strong>Step 4 — simplify the second term.</strong> x/(2√x) = √x/2.<br><br>
+      <strong>Final answer:</strong><br>
+      y′ = tan(√x) + (√x/2)sec²(√x).<br><br>
+      (This derivative is valid for x > 0 where √x is defined.)</p>
+    </div>
+
+    <div class="qa">
+      <h3>A-5. Find critical points of y = 5x³ - 6x</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      y′ = 15x² - 6.<br><br>
+      <strong>Step 2 — set derivative to zero.</strong><br>
+      15x² - 6 = 0 ⇒ x² = 6/15 = 2/5.<br>
+      x = ±√(2/5).<br><br>
+      <strong>Step 3 — corresponding y-values (optional, but shown):</strong> Let s = √(2/5).<br>
+      For x = s: x³ = s³ = s·s² = s·(2/5) = (2/5)s.<br>
+      y(s) = 5·(2/5)s - 6s = 2s - 6s = -4s.<br>
+      For x = -s: x³ = -(2/5)s,<br>
+      y(-s) = 5·(-(2/5)s) - 6(-s) = -2s + 6s = 4s.<br><br>
+      <strong>Answer:</strong> critical points (x-values) x = ±√(2/5).<br>
+      If needed, points: (√(2/5), -4√(2/5)) and (-√(2/5), 4√(2/5)).</p>
+    </div>
+
+    <div class="qa">
+      <h3>A-6. Lagrange's Mean Value Theorem (MVT)</h3>
+      <p><strong>Statement (clear form):</strong><br>
+      If f is continuous on the closed interval [a,b] and differentiable on the open interval (a,b), then there exists at least one c ∈ (a,b) such that<br><br>
+      f′(c) = [f(b) - f(a)]/(b - a).<br><br>
+      <strong>Interpretation:</strong> at some interior point the instantaneous rate of change equals the average rate of change over [a,b].</p>
+    </div>
+
+    <div class="qa">
+      <h3>A-7. Differentiate y = x ln((x-1)/(x+1))</h3>
+      <p><strong>Step 0 — domain note.</strong> ln((x-1)/(x+1)) requires (x-1)/(x+1) > 0 and x ≠ -1. That condition holds for x > 1 and x < -1. Work on those intervals.<br><br>
+      <strong>Step 1 — product rule.</strong> u = x, v = ln((x-1)/(x+1)).<br>
+      y′ = u′v + uv′ = ln((x-1)/(x+1)) + x·v′.<br><br>
+      <strong>Step 2 — compute v′.</strong><br>
+      v = ln(x-1) - ln(x+1) ⇒ v′ = 1/(x-1) - 1/(x+1).<br>
+      Compute difference:<br>
+      1/(x-1) - 1/(x+1) = [(x+1) - (x-1)]/[(x-1)(x+1)] = 2/(x²-1).<br><br>
+      <strong>Step 3 — assemble.</strong><br>
+      y′ = ln((x-1)/(x+1)) + x·2/(x²-1).<br><br>
+      <strong>Answer:</strong> y′ = ln((x-1)/(x+1)) + 2x/(x²-1), (x > 1 or x < -1).</p>
+    </div>
+
+    <div class="qa">
+      <h3>A-8. Critical values of f(x) = 2x³ - 3x² - 36x</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      f′(x) = 6x² - 6x - 36 = 6(x² - x - 6).<br>
+      Factor quadratic:<br>
+      x² - x - 6 = (x - 3)(x + 2).<br>
+      So f′(x) = 6(x - 3)(x + 2).<br><br>
+      <strong>Step 2 — critical points where f′(x) = 0.</strong><br>
+      x = 3, x = -2.<br><br>
+      <strong>Step 3 — critical values f(x) at those x's.</strong><br>
+      f(3) = 2(27) - 3(9) - 36(3) = 54 - 27 - 108 = -81.<br>
+      f(-2) = 2(-8) - 3(4) - 36(-2) = -16 - 12 + 72 = 44.<br><br>
+      <strong>Answer:</strong> critical points x = -2, 3 with function values f(-2) = 44, f(3) = -81.</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-1. Find a,b so f continuous if f(x) = {(x³-8)/(x-2), x<2; ax²-bx+3, 2≤x≤3; 2x-a+b, x≥3}</h3>
+      <p>Continuity requires matching values at boundary points x = 2 and x = 3.<br><br>
+      <strong>Step 1 — simplify left expression for x ≠ 2.</strong> Factor numerator:<br>
+      x³ - 8 = (x - 2)(x² + 2x + 4).<br>
+      So for x ≠ 2,<br>
+      (x³-8)/(x-2) = x² + 2x + 4.<br><br>
+      <strong>Step 2 — left-hand limit at x = 2.</strong><br>
+      lim(x→2⁻) f(x) = 2² + 2·2 + 4 = 4 + 4 + 4 = 12.<br><br>
+      <strong>Step 3 — continuity at x = 2 gives middle piece value at 2 equals 12.</strong><br>
+      a(2)² - b(2) + 3 = 12 ⇒ 4a - 2b + 3 = 12.<br>
+      So 4a - 2b = 9 (Equation 1).<br><br>
+      <strong>Step 4 — continuity at x = 3: middle piece at 3 equals right piece at 3.</strong><br>
+      a(3)² - b(3) + 3 = 2(3) - a + b.<br>
+      Compute: 9a - 3b + 3 = 6 - a + b.<br>
+      Bring all terms to left: 9a + a - 3b - b + 3 - 6 = 0 ⇒ 10a - 4b - 3 = 0,<br>
+      i.e. 10a - 4b = 3 (Equation 2).<br><br>
+      <strong>Step 5 — solve the linear system</strong><br>
+      {4a - 2b = 9<br>
+      {10a - 4b = 3<br><br>
+      Multiply Eq1 by 2: 8a - 4b = 18. Subtract Eq2:<br>
+      (8a - 4b) - (10a - 4b) = 18 - 3 ⇒ -2a = 15 ⇒ a = -15/2.<br><br>
+      Plug into Eq1:<br>
+      4(-15/2) - 2b = 9 ⇒ -30 - 2b = 9 ⇒ -2b = 39 ⇒ b = -39/2.<br><br>
+      <strong>Answer:</strong> a = -15/2, b = -39/2.</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-2. dy/dx for (i) x⁴+y⁴=16, (ii) x³+y³=3axy</h3>
+      <p><strong>(i) x⁴ + y⁴ = 16</strong><br><br>
+      Differentiate both sides w.r.t. x:<br>
+      d/dx(x⁴) + d/dx(y⁴) = d/dx(16).<br>
+      4x³ + 4y³(dy/dx) = 0.<br><br>
+      Solve for dy/dx:<br>
+      4y³(dy/dx) = -4x³ ⇒ dy/dx = -x³/y³.<br><br>
+      <strong>(ii) x³ + y³ = 3axy</strong><br><br>
+      Differentiate both sides:<br>
+      Left: 3x² + 3y²(dy/dx).<br>
+      Right: 3a·d/dx(xy) = 3a(y + x(dy/dx)).<br><br>
+      So: 3x² + 3y²(dy/dx) = 3a(y + x(dy/dx)).<br><br>
+      Collect dy/dx terms to left:<br>
+      3y²(dy/dx) - 3ax(dy/dx) = 3ay - 3x².<br><br>
+      Factor dy/dx:<br>
+      (dy/dx)(3y² - 3ax) = 3(ay - x²).<br><br>
+      Divide:<br>
+      dy/dx = (ay - x²)/(y² - ax).</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-3. Differentiate y = (a-x)²(b-x)³/(c-2x)³</h3>
+      <p>Use logarithmic differentiation (cleanest).<br><br>
+      <strong>Step 1 — take ln of both sides:</strong><br>
+      ln y = 2ln(a-x) + 3ln(b-x) - 3ln(c-2x).<br><br>
+      <strong>Step 2 — differentiate with respect to x.</strong> Use d/dx ln(g(x)) = g′(x)/g(x):<br>
+      d/dx ln(a-x) = -1/(a-x),<br>
+      d/dx ln(b-x) = -1/(b-x),<br>
+      d/dx ln(c-2x) = -2/(c-2x) (because derivative of c-2x is -2).<br><br>
+      So: y′/y = -2/(a-x) - 3/(b-x) + 6/(c-2x).<br><br>
+      <strong>Step 3 — multiply both sides by y (original function):</strong><br>
+      y′ = [(a-x)²(b-x)³/(c-2x)³][-2/(a-x) - 3/(b-x) + 6/(c-2x)].<br><br>
+      This is a clean final form; you can expand to a single rational expression if desired.</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-4. Show continuity of f(x) = {1-x², x≤1; ln x, x≥1}</h3>
+      <p><strong>Step 1 — continuity on each piece.</strong><br>
+      1-x² is a polynomial — continuous everywhere.<br>
+      ln x is continuous on (0,∞) — here used on [1,∞), so continuous there.<br><br>
+      <strong>Step 2 — check at x = 1:</strong><br>
+      Left value f(1⁻) = 1-1² = 0.<br>
+      Right value f(1⁺) = ln 1 = 0.<br>
+      Both match, and both pieces include x = 1. Thus f is continuous at x = 1.<br><br>
+      <strong>Conclusion:</strong> f is continuous for all real x (because left piece covers (-∞,1] and right piece covers [1,∞) and they agree at 1).</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-5. Let f(x) = {-√x, x<0; 3-x, 0≤x≤3; (x-3)², x>3}</h3>
+      <p>Evaluate the limits:<br>
+      lim(x→0⁻) f(x), lim(x→0⁺) f(x), lim(x→3⁻) f(x), lim(x→3⁺) f(x), lim(x→0) f(x), lim(x→3) f(x).<br><br>
+      Compute one by one:<br><br>
+      <strong>lim(x→0⁻) f(x)</strong><br>
+      For x→0⁻, use left formula f(x) = -√x. As x→0⁻, -√x→0⁺, so -√x→0.<br>
+      <strong>Answer:</strong> 0.<br><br>
+      <strong>lim(x→0⁺) f(x)</strong><br>
+      For x→0⁺, middle formula f(x) = 3-x. So lim(x→0⁺) 3-x = 3.<br>
+      <strong>Answer:</strong> 3.<br><br>
+      <strong>lim(x→0) f(x) — does it exist?</strong><br>
+      Left limit = 0, right limit = 3. They differ ⇒ the two-sided limit does not exist.<br><br>
+      <strong>lim(x→3⁻) f(x)</strong><br>
+      For x→3⁻, middle formula 3-x gives 3-3 = 0. So left-hand limit at 3 is 0.<br><br>
+      <strong>lim(x→3⁺) f(x)</strong><br>
+      For x→3⁺, right formula (x-3)²→0. So right-hand limit equals 0.<br><br>
+      <strong>lim(x→3) f(x)</strong> — two-sided limit exists and equals 0. Also the middle piece value f(3) = 3-3 = 0 so the function is continuous at x = 3.<br><br>
+      <strong>Summary:</strong><br>
+      lim(x→0⁻) f(x) = 0.<br>
+      lim(x→0⁺) f(x) = 3.<br>
+      lim(x→0) f(x) does not exist.<br>
+      lim(x→3⁻) f(x) = 0.<br>
+      lim(x→3⁺) f(x) = 0.<br>
+      lim(x→3) f(x) = 0 (function continuous at 3).<br><br>
+      <img src="https://i.ibb.co/0Rk1yS1V/image.png" alt="Graph showing limits and discontinuity" style="max-width: 100%; height: auto; border-radius: 5px; margin: 10px 0;"></p>
+    </div>
+
+    <div class="qa">
+      <h3>B-6. Tangent and normal to f(x) = (x²-1)/(x²+x+1) at (1,0)</h3>
+      <p><strong>Step 1 — verify point on curve.</strong><br>
+      Plug x = 1: f(1) = (1-1)/(1+1+1) = 0/3 = 0. OK.<br><br>
+      <strong>Step 2 — derivative (quotient rule).</strong><br>
+      If u(x) = x²-1, v(x) = x²+x+1, then<br>
+      f′(x) = (u′v - uv′)/v².<br><br>
+      Compute: u′ = 2x, v′ = 2x+1.<br><br>
+      So f′(x) = [2x(x²+x+1) - (x²-1)(2x+1)]/(x²+x+1)².<br><br>
+      <strong>Step 3 — evaluate at x = 1.</strong><br>
+      Numerator: 2(1)(1+1+1) - (1-1)(2+1) = 2·3 - 0 = 6.<br>
+      Denominator: (1+1+1)² = 3² = 9.<br>
+      So f′(1) = 6/9 = 2/3.<br><br>
+      <strong>Step 4 — tangent line equation.</strong> Point-slope form at (1,0) with slope 2/3:<br>
+      y - 0 = (2/3)(x - 1) ⇒ y = (2/3)x - 2/3.<br><br>
+      <strong>Step 5 — normal line equation.</strong> Normal slope m_n = -1/m_t = -3/2. So:<br>
+      y - 0 = -(3/2)(x - 1) ⇒ y = -(3/2)x + 3/2.</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-7. Absolute max & min of f(x) = 3x⁴-16x³+18x² on [-1,4]</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      f′(x) = 12x³-48x²+36x = 12x(x²-4x+3) = 12x(x-1)(x-3).<br><br>
+      <strong>Step 2 — critical points in interval.</strong> Solve f′(x) = 0:<br>
+      x = 0, 1, 3.<br><br>
+      <strong>Step 3 — evaluate f at endpoints and critical points.</strong><br>
+      f(-1) = 3(-1)⁴-16(-1)³+18(-1)² = 3+16+18 = 37.<br>
+      f(0) = 0.<br>
+      f(1) = 3-16+18 = 5.<br>
+      f(3) = 3(81)-16(27)+18(9) = 243-432+162 = -27.<br>
+      f(4) = 3(256)-16(64)+18(16) = 768-1024+288 = 32.<br><br>
+      <strong>Step 4 — compare values.</strong><br>
+      Largest value is 37 at x = -1.<br>
+      Smallest value is -27 at x = 3.<br><br>
+      <strong>Answer:</strong> Absolute max 37 at x = -1, Absolute min -27 at x = 3.</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-8. Increasing / decreasing for f(x) = 3x⁴-4x³-12x²+5</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      f′(x) = 12x³-12x²-24x = 12x(x²-x-2) = 12x(x-2)(x+1).<br><br>
+      <strong>Step 2 — critical points at x = -1, 0, 2.</strong><br><br>
+      <strong>Step 3 — sign analysis (test intervals):</strong><br>
+      For x < -1: take x = -2: factors (x) negative, (x-2) negative, (x+1) negative ⇒ product negative → f′ < 0 (decreasing).<br>
+      For -1 < x < 0: take -0.5: signs (x) negative, (x-2) negative, (x+1) positive ⇒ product positive → f′ > 0 (increasing).<br>
+      For 0 < x < 2: take 1: signs: +, -, + → negative → f′ < 0 (decreasing).<br>
+      For x > 2: take 3: all factors positive → f′ > 0 (increasing).<br><br>
+      <strong>Answer:</strong><br>
+      f is increasing on (-1,0) ∪ (2,∞).<br>
+      f is decreasing on (-∞,-1) ∪ (0,2).</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-9. If y^x = x^y, prove dy/dx = y(y-x ln y)/[x(x-y ln x)]</h3>
+      <p>(Assume x > 0, y > 0 so logs are defined.)<br><br>
+      <strong>Step 1 — take natural log both sides:</strong><br>
+      x ln y = y ln x.<br><br>
+      <strong>Step 2 — differentiate both sides w.r.t. x.</strong> Use product rule on both sides:<br>
+      Left derivative: 1·ln y + x·(1/y)(dy/dx).<br>
+      Right derivative: (dy/dx)·ln x + y·(1/x).<br><br>
+      So: ln y + (x/y)(dy/dx) = ln x(dy/dx) + y/x.<br><br>
+      <strong>Step 3 — gather dy/dx terms on left:</strong><br>
+      (x/y)(dy/dx) - ln x(dy/dx) = y/x - ln y.<br><br>
+      Factor dy/dx:<br>
+      (dy/dx)(x/y - ln x) = y/x - ln y.<br><br>
+      <strong>Step 4 — write RHS and LHS with common factors to reach target form.</strong> Multiply numerator and denominator appropriately:<br>
+      dy/dx = (y/x - ln y)/(x/y - ln x).<br><br>
+      Multiply numerator and denominator by xy:<br>
+      dy/dx = (y² - xy ln y)/(x² - xy ln x) = y(y - x ln y)/[x(x - y ln x)].<br><br>
+      <strong>Result:</strong> dy/dx = y(y - x ln y)/[x(x - y ln x)].</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-10. For f(x) = 2x³+3x²-36x: (i) critical points, (ii) intervals of inc/dec, (iii) local max/min, (iv) concavity & inflection</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      f′(x) = 6x²+6x-36 = 6(x²+x-6) = 6(x+3)(x-2).<br><br>
+      <strong>(i) Critical points:</strong> Solve f′ = 0: x = -3, x = 2.<br><br>
+      <strong>(ii) Intervals of increase / decrease (sign test):</strong><br>
+      For x < -3 (take -4): factors (x+3) < 0, (x-2) < 0 ⇒ product + ⇒ f′ > 0 (increasing).<br>
+      For -3 < x < 2 (take 0): (x+3) > 0, (x-2) < 0 ⇒ product - ⇒ f′ < 0 (decreasing).<br>
+      For x > 2: product + ⇒ f′ > 0 (increasing).<br>
+      So f increases on (-∞,-3) ∪ (2,∞), decreases on (-3,2).<br><br>
+      <strong>(iii) Local extrema:</strong><br>
+      At x = -3: f′ changes +→- ⇒ local maximum.<br>
+      At x = 2: f′ changes -→+ ⇒ local minimum.<br>
+      Compute values:<br>
+      f(-3) = 2(-27)+3(9)-36(-3) = -54+27+108 = 81.<br>
+      f(2) = 16+12-72 = -44.<br>
+      So local max 81 at x = -3; local min -44 at x = 2.<br><br>
+      <strong>(iv) Concavity & inflection.</strong><br>
+      Second derivative: f′′(x) = 12x+6.<br>
+      Set f′′(x) = 0 → 12x+6 = 0 ⇒ x = -1/2.<br>
+      For x < -1/2, f′′ < 0 ⇒ concave down.<br>
+      For x > -1/2, f′′ > 0 ⇒ concave up.<br>
+      Inflection point: x = -1/2, value:<br>
+      f(-1/2) = 2(-1/8)+3(1/4)-36(-1/2) = -1/4+3/4+18 = 1/2+18 = 37/2.<br>
+      So inflection point (-1/2, 37/2).</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-11. For y = x⁴-4x³: (i) critical points, (ii) inc/dec, (iii) local extrema, (iv) concavity & inflection</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      y′ = 4x³-12x² = 4x²(x-3).<br><br>
+      <strong>(i) Critical points:</strong> y′ = 0 ⇒ x = 0 (double root) and x = 3.<br><br>
+      <strong>(ii) Intervals (sign):</strong><br>
+      For x < 0: x² > 0, x-3 < 0 ⇒ y′ < 0 (decreasing).<br>
+      For 0 < x < 3: x² > 0, x-3 < 0 ⇒ y′ < 0 (decreasing) — no sign change at 0 because multiplicity 2.<br>
+      For x > 3: y′ > 0 (increasing).<br>
+      So decreasing on (-∞,3), increasing on (3,∞). (At x = 0 derivative zero but no extrema.)<br><br>
+      <strong>(iii) Local extrema:</strong><br>
+      x = 0: derivative zero but no sign change ⇒ neither max nor min.<br>
+      x = 3: derivative changes negative→positive ⇒ local minimum at x = 3. Value y(3) = 3⁴-4·3³ = 81-108 = -27.<br><br>
+      <strong>(iv) Concavity & inflection.</strong><br>
+      Second derivative: y′′ = 12x²-24x = 12x(x-2).<br>
+      Zeros at x = 0 and x = 2.<br>
+      x < 0: y′′ > 0 ⇒ concave up.<br>
+      0 < x < 2: y′′ < 0 ⇒ concave down.<br>
+      x > 2: y′′ > 0 ⇒ concave up.<br>
+      Inflection points at x = 0 and x = 2:<br>
+      y(0) = 0. So inflection (0,0).<br>
+      y(2) = 2⁴-4·2³ = 16-32 = -16. So inflection (2,-16).</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-12. If f(x) = xe^x, find f′(x) and f^(n)(x) (the nth derivative)</h3>
+      <p><strong>Step 1 — first derivative (product rule).</strong><br>
+      f′(x) = e^x + xe^x = e^x(1+x).<br><br>
+      <strong>Step 2 — compute a couple to see pattern:</strong><br>
+      f′′(x) = d/dx[e^x(1+x)] = e^x(1+x) + e^x = e^x(x+2).<br>
+      f^(3)(x) = d/dx[e^x(x+2)] = e^x(x+2) + e^x = e^x(x+3).<br><br>
+      <strong>Step 3 — observe pattern and prove by induction.</strong><br>
+      Conjecture: f^(n)(x) = e^x(x+n).<br>
+      Base (n=1): f′(x) = e^x(x+1) — true.<br>
+      Inductive step: assume f^(n)(x) = e^x(x+n). Then<br>
+      f^(n+1)(x) = d/dx[e^x(x+n)] = e^x(x+n) + e^x = e^x(x+n+1),<br>
+      so the formula holds.<br><br>
+      <strong>Answer:</strong> f′(x) = e^x(x+1), f^(n)(x) = e^x(x+n).</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-13. Find b so f(x) = {bx²+2x, x<2; x³-bx, x≥2} is continuous</h3>
+      <p>Continuity at x = 2 requires left-hand limit = right-hand value.<br><br>
+      Left-hand at 2: 4b + 4.<br>
+      Right-hand at 2: 8 - 2b.<br><br>
+      Set equal:<br>
+      4b + 4 = 8 - 2b ⇒ 6b = 4 ⇒ b = 2/3.<br><br>
+      <strong>Answer:</strong> b = 2/3.</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-14. Differentiate using logarithmic differentiation: y = (x^(3/2)√(x²+1))/(3x+2)⁵</h3>
+      <p>Rewrite: y = x^(3/2)(x²+1)^(1/2)(3x+2)^(-5).<br><br>
+      <strong>Step 1 — take natural log:</strong><br>
+      ln y = (3/2)ln x + (1/2)ln(x²+1) - 5ln(3x+2).<br><br>
+      <strong>Step 2 — differentiate both sides:</strong><br>
+      y′/y = (3/2)·(1/x) + (1/2)·(2x)/(x²+1) - 5·3/(3x+2).<br>
+      Simplify: y′/y = 3/(2x) + x/(x²+1) - 15/(3x+2).<br><br>
+      <strong>Step 3 — multiply by y (original expression):</strong><br>
+      y′ = (x^(3/2)√(x²+1))/(3x+2)⁵ [3/(2x) + x/(x²+1) - 15/(3x+2)].<br><br>
+      (If you want, we can combine the parentheses terms into a single rational expression — tell me if you want that.)</p>
+    </div>
+
+    <div class="qa">
+      <h3>B-15. Absolute max / min of f(x) = 3x²-12x+5 on [0,3]</h3>
+      <p><strong>Step 1 — derivative.</strong><br>
+      f′(x) = 6x-12.<br><br>
+      <strong>Step 2 — critical point inside interval.</strong><br>
+      6x-12 = 0 ⇒ x = 2.<br><br>
+      <strong>Step 3 — evaluate at endpoints and critical point.</strong><br>
+      f(0) = 5.<br>
+      f(2) = 3(4)-24+5 = -7.<br>
+      f(3) = 27-36+5 = -4.<br><br>
+      <strong>Step 4 — compare.</strong><br>
+      Maximum value is 5 at x = 0. Minimum value is -7 at x = 2.<br><br>
+      <strong>Answer:</strong> Absolute max 5 at x = 0, Absolute min -7 at x = 2.</p>
     </div>
   </main>
 
